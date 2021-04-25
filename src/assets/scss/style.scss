@@ -1,0 +1,11 @@
+@import "_header.scss";
+
+body {
+    margin: 0;
+    display: flex;
+    transform: translateX(50%);
+    font-size: 25px;
+    background-color: #fff;
+    border-radius: 5px;
+    line-height: 25px;
+}
