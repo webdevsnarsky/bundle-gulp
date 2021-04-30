@@ -1,11 +1,7 @@
-@import "_header.scss";
+@import "base/global";
+@import "components/global";
+@import "layout/global";
+@import "utils/global";
+@import "vendors/global";
 
-body {
-    margin: 0;
-    display: flex;
-    transform: translateX(50%);
-    font-size: 25px;
-    background-color: #fff;
-    border-radius: 5px;
-    line-height: 25px;
-}
+

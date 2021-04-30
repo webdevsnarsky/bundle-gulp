@@ -13,12 +13,18 @@
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-csso": "^4.0.1",
+    "gulp-group-css-media-queries": "^1.2.2",
     "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
     "node-sass": "^5.0.0"
   },
   "browserslist": [
     "last 25 version",
     "> 5%",
     "IE 10"
-  ]
+  ],
+  "dependencies": {
+    "gulp-rename": "^2.0.0",
+    "normalize.css": "^8.0.1"
+  }
 }
