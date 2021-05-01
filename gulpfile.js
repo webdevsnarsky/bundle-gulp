@@ -14,11 +14,11 @@ gulp.task('sass', function (){
     return gulp.src('./src/assets/scss/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
-    .pipe(csso())
     .pipe(autoprefixer({
         cascade: false
     }))
     .pipe(gcmq())
+    .pipe(csso())
     .pipe(rename({suffix: '.min'}))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./src/assets/css'))
@@ -37,4 +37,4 @@ gulp.task('serve', function() {
 });
 
 
-gulp.task('start', gulp.series('sass', 'serve'));
+gulp.task('start', gulp.parallel('sass', 'serve'));
