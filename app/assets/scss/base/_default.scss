@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+ul {
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.scroll-hidden {
+  overflow: hidden;
+}
